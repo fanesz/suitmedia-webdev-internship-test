@@ -38,7 +38,7 @@ module.exports = withMT({
         show: "show 0.5s forwards",
       },
       backgroundImage: {
-        'banner': 'url("src/assets/banner.jpg")'
+        'banner': 'url("../src/assets/banner.jpg")'
       }
     },
   },
