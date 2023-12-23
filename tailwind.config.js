@@ -37,6 +37,9 @@ module.exports = withMT({
         hide: "hide 0.5s forwards",
         show: "show 0.5s forwards",
       },
+      backgroundImage: {
+        'banner': 'url("src/assets/banner.jpg")'
+      }
     },
   },
   plugins: [],

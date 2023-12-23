@@ -29,7 +29,7 @@ const Filter = (props: props) => {
       <div className="mt-5 flex w-1/2 gap-3 md:mt-0 md:justify-end md:gap-7">
         <div className="">
           <Select
-            defaultValue={pageItems.toString() + " Items"}
+            value={pageItems.toString() + " Items"}
             label="Show per page"
             placeholder="Show per page"
           >
@@ -46,11 +46,11 @@ const Filter = (props: props) => {
         </div>
         <div className="">
           <Select
-            defaultValue={sortBy === "-published_at" ? "Newest" : "Oldest"}
+            value={sortBy === "-published_at" ? "Newest" : "Oldest"}
             label="Show per page"
             placeholder="Sort by"
           >
-            {["published_at", "-published_at"].map((item, index) => (
+            {["-published_at", "published_at"].map((item, index) => (
               <Option
                 key={index}
                 value={sortBy}
