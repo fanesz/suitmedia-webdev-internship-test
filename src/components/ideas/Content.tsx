@@ -9,7 +9,7 @@ const Content = (props: { ideas: IdeaType[]; isLoading: boolean }) => {
     <div>
       <SkeletonTheme baseColor="#DEDEDE" highlightColor="#ffffff">
         <div className="flex flex-wrap">
-          {props.isLoading && <IdeaCardSkeleton cards={10} />}
+          {props.isLoading && <IdeaCardSkeleton cards={12} />}
           {props.ideas?.map((item, index) => (
             <IdeaCard key={index} {...item} />
           ))}
