@@ -33,7 +33,7 @@ const Filter = (props: props) => {
             label="Show per page"
             placeholder="Show per page"
           >
-            {[10, 30, 50].map((item, index) => (
+            {[10, 20, 50].map((item, index) => (
               <Option
                 key={index}
                 value={pageItems.toString()}
